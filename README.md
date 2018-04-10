@@ -115,7 +115,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 
 - Internacionalizado: Usou o separador decimal e o separador de milhares definidos na configuração do navegador do cliente.
 
-- The $modelValue is the $viewValue / 100, so $viewValue - 100% = $modelValue - 1
+- O $modelValue é o $viewValue / 100, portanto $viewValue - 100% = $modelValue - 1
 
 - Você pode adicionar ```ui-hide-space``` atributo para esconder o espaço entre [NUMBER] e %
 
@@ -127,17 +127,17 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 <input type="text" name="field" ng-model="money" ui-money-mask>
 ```
 
-- Define the number of decimals (default is 2):
+- Defina o número de decimais (o padrão é 2):
 
 ```html
 <input type="text" name="field" ng-model="money" ui-money-mask="3">
 ```
 
-- Support to the ```min```, ```max``` and ```ui-hide-group-sep``` attributes.
+- Suporte aos atributos `` `min```,` `` max``` e `` `ui-hide-group-sep```.
 
-- Internationalized: Used the currency symbol, decimal separator and thousands separator defined in the client browser configuration.
+- Internacionalizado: Usou o símbolo da moeda, o separador decimal e o separador de milhares definidos na configuração do navegador do cliente.
 
-- You can add ```ui-hide-space``` attribute to hide space between [Currency symbol] and [NUMBER]
+- Você pode adicionar o atributo `` `ui-hide-space``` para ocultar o espaço entre [Símbolo de moeda] e [NÚMERO]
 
 ### ui-br-phone-number ###
 ```html
@@ -151,7 +151,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 
 ### ui-br-cpf-mask ###
 
- - Example:
+ - Exemplo:
 
 ```html
 <input type="text" name="field" ng-model="initializedCpf" ui-br-cpf-mask>
@@ -159,7 +159,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 
 ### ui-br-cnpj-mask ###
 
- - Example:
+ - Exemplo:
 
 ```html
 <input type="text" name="field" ng-model="initializedCnpj" ui-br-cnpj-mask>
@@ -167,7 +167,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 
 ### ui-br-cpfcnpj-mask ###
 
- - Example:
+ - Exemplo:
 
 ```html
 <input type="text" name="field" ng-model="initializedCpfCnpj1" ui-br-cpfcnpj-mask>
@@ -178,38 +178,38 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 <select ng-init="ufs=['AC','AL','AM','TO']" ng-model="selectedUF" ng-options="uf for uf in ufs"></select>
 <input type="text" name="field19" ng-model="ieField" ui-br-ie-mask='selectedUF'>
 ```
-- Support masks for all the 27 brazillian states.
+- Suporta máscaras para todos os 27 estados brasileiros.
 
-- Validations according to the [Sintegra especification](http://www.sintegra.gov.br/insc_est.html).
+- Validações de acordo com a especificação [Sintegra](http://www.sintegra.gov.br/insc_est.html).
 
 ### ui-time-mask ###
--Example:
+-Exemplo:
 
 ```html
 <input type="text" name="field" ng-model="initializeTime" ui-time-mask>
 ```
-- Support to the ```short``` attributes.
+- Suporte para os atributos `` `short```.
 ```html
 <input type="text" name="field" ng-model="initializeTime" ui-time-mask="short">
 ```
 
 ### ui-date-mask ###
--Example:
+-Exemplo:
 
 ```html
 <input type="text" name="field" ng-model="birthDate" ui-date-mask>
 ```
-- Support to the custom date masks (See moment.js date formats).
+- Suporte para as máscaras de data personalizadas (consulte os formatos de data do moment.js).
 ```html
 <input type="text" name="field" ng-model="birthDate" ui-date-mask="DD-MM-YYYY">
 ```
-- Support to ```parse``` attribute. When the attribute is set to ```false```, the inputed value will be passed to the model as a string. Default value of the attribute is ```true```. 
+- Suporte para o atributo `` `parse```. Quando o atributo é definido como `` `false```, o valor introduzido será passado para o modelo como uma string. O valor padrão do atributo é `` `true```. 
 ```html
 <input type="text" name="field" ng-model="birthDate" ui-date-mask parse="false">
 ```
 ### Mais exemplos ###
 
-_See more usage examples in the [Demo page](http://assisrafael.github.io/angular-input-masks/)_
+- Veja mais usos Exemplos na [página Demo](http://assisrafael.github.io/angular-input-masks/)_
 
 
 ### Máscaras sem documentação (ajuda desejada!)
