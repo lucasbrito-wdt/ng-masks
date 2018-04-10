@@ -83,7 +83,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 ```
 
 ```html
-<! - Use o atributo 'ui-hide-group-sep' se você não quiser mostrar os separadores de milhares ->
+<!- Use o atributo 'ui-hide-group-sep' se você não quiser mostrar os separadores de milhares ->
 <input type="text" name="field" ng-model="number" ui-number-mask ui-hide-group-sep>
 ```
 
