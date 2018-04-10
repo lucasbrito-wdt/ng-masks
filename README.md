@@ -4,7 +4,7 @@
 
 [![Join the chat at https://gitter.im/assisrafael/angular-input-masks](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/assisrafael/angular-input-masks?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Bountysource](https://www.bountysource.com/badge/team?team_id=60791&style=bounties_posted)](https://www.bountysource.com/teams/angular-input-masks/bounties?utm_source=angular-input-masks&utm_medium=shield&utm_campaign=bounties_posted)
 
-Opinionated angular input masks. Provides ready to use masks with little (br/inscricao-estadual) to no configuration (number, cnpj, etc).
+Máscaras de entrada angular com opinião. Fornece pronto para usar máscaras com pouco (br / inscricao-estadual) sem configuração (number, cnpj, etc).
 
 ### Compatibilidade
 
@@ -91,21 +91,21 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 
 ### ui-percentage-mask ###
 
- - Example:
+ - Exemplo:
 
 ```html
 <input type="text" name="field" ng-model="percentage" ui-percentage-mask>
 ```
 
-- You can set the number of decimals (default is 2):
+- Você pode definir o número de decimais (o padrão é 2):
 
 ```html
 <input type="text" name="field" ng-model="percentage" ui-percentage-mask="4">
 ```
 
-- The $modelValue is the $viewValue / 100, so $viewValue - 100% = $modelValue - 1
+- O $modelValue é o $viewValue / 100, portanto $viewValue - 100% = $modelValue - 1
 
-- You can use the same value in $modelValue and $viewValue using ```ui-percentage-value```:
+- Você pode usar o mesmo valor em $modelValue e $viewValue usando ```ui-percentage-value```:
 
 ```html
 <input type="text" name="field" ng-model="percentage" ui-percentage-mask ui-percentage-value>
@@ -113,15 +113,15 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 
 - Support to the ```min```, ```max``` and ```ui-hide-group-sep``` attributes.
 
-- Internationalized: Used the decimal separator and thousands separator defined in the client browser configuration.
+- Internacionalizado: Usou o separador decimal e o separador de milhares definidos na configuração do navegador do cliente.
 
 - The $modelValue is the $viewValue / 100, so $viewValue - 100% = $modelValue - 1
 
-- You can add ```ui-hide-space``` attribute to hide space between [NUMBER] and %
+- Você pode adicionar ```ui-hide-space``` atributo para esconder o espaço entre [NUMBER] e %
 
 ### ui-money-mask ###
 
- - Example:
+ - Exemplo:
 
 ```html
 <input type="text" name="field" ng-model="money" ui-money-mask>
@@ -207,12 +207,12 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 ```html
 <input type="text" name="field" ng-model="birthDate" ui-date-mask parse="false">
 ```
-### More examples ###
+### Mais exemplos ###
 
 _See more usage examples in the [Demo page](http://assisrafael.github.io/angular-input-masks/)_
 
 
-### Masks without documentation (help wanted!)
+### Máscaras sem documentação (ajuda desejada!)
 
 - ui-nfe-access-key-mask
 - ui-time-mask
@@ -222,52 +222,52 @@ _See more usage examples in the [Demo page](http://assisrafael.github.io/angular
 - ui-scientific-notation-mask
 - ui-us-phone-number
 
-## Other build options
+## Outras opções de construção
 
-If you are using bower or npm (without browserify):
 
-- angular-input-masks-dependencies.js: provides all external dependencies (string-mask, br-validations, momentjs)
-- angular-input-masks-br.js: provides only global and BR directives, and does not include external dependencies (string-mask, br-validations, momentjs)
-- angular-input-masks-us.js: provides only global and US directives, and does not include external dependencies (string-mask, br-validations, momentjs)
-- angular-input-masks.js: provides all directives, and does not include external dependencies (string-mask, br-validations, momentjs)
+Se você estiver usando o bower ou npm (sem navegador):
 
-If you are using npm with browserify:
+- angular-input-masks-dependencies.js: fornece todas as dependências externas (string-mask, br-validações, momentjs)
+- angular-input-masks-br.js: fornece apenas diretivas globais e BR, e não inclui dependências externas (string-mask, br-validações, momentjs)
+- angular-input-masks-us.js: fornece apenas diretivas globais e norte-americanas e não inclui dependências externas (string-mask, br-validações, momentjs)
+- angular-input-masks.js: fornece todas as diretivas e não inclui dependências externas (string-mask, br-validações, momentjs)
 
-- ```require('angular-input-masks')```: provides all directives
-- ```require('angular-input-masks/br')```: only global and BR directives
-- ```require('angular-input-masks/us')```: only global and US directives
+Se você estiver usando o npm com o browserify:
 
-## Filters
+- ```require('angular-input-masks')```: fornece todas as diretivas
+- ```require('angular-input-masks/br')```: apenas diretivas globais e BR
+- ```require('angular-input-masks/us')```: apenas diretivas globais e norte-americanas
 
-Looking for related filters? Take a look at [angular-br-filters](https://github.com/the-darc/angular-br-filters)
+## Filtros
+Procurando por filtros relacionados? Dê uma olhada em [angular-br-filters], https://github.com/the-darc/angular-br-filters
 
-## Build
+## Construir
 
 ```
 npm install
 gulp build
 ```
 
-### Tests
+### Testes
 
-- Unit:
- - Uses [Karma](http://karma-runner.github.io) + [Jasmine](http://jasmine.github.io/)
- - Files: `src/**/*.test.js`
+ - Unit:
+ - Usos [Karma](http://karma-runner.github.io) + [Jasmine](http://jasmine.github.io/)
+ - Arquivos: `src/**/*.test.js`
 
 ```
 npm run test:unit
 ```
 
-- e2e:
- - Uses [Protractor](https://github.com/angular/protractor) + Jasmine
- - Files: `src/**/*.spec.js`
+ - e2e:
+ - Usos [Protractor](https://github.com/angular/protractor) + Jasmine
+ - Arquivos: `src/**/*.spec.js`
 
 
 ```
 npm run test:e2e
 ```
 
-- To run both tests:
+- Para executar os dois testes:
 
 ```
 npm test
