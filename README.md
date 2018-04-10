@@ -133,7 +133,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 <input type="text" name="field" ng-model="money" ui-money-mask="3">
 ```
 
-- Suporte aos atributos `` `min```,` `` max``` e `` `ui-hide-group-sep```.
+- Suporte aos atributos ```min```,``` max``` e ```ui-hide-group-sep```.
 
 - Internacionalizado: Usou o símbolo da moeda, o separador decimal e o separador de milhares definidos na configuração do navegador do cliente.
 
@@ -188,7 +188,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 ```html
 <input type="text" name="field" ng-model="initializeTime" ui-time-mask>
 ```
-- Suporte para os atributos `` `short```.
+- Suporte para os atributos ```short```.
 ```html
 <input type="text" name="field" ng-model="initializeTime" ui-time-mask="short">
 ```
@@ -203,7 +203,7 @@ Algumas máscaras são internacionalizadas, portanto, é necessário incluir o l
 ```html
 <input type="text" name="field" ng-model="birthDate" ui-date-mask="DD-MM-YYYY">
 ```
-- Suporte para o atributo `` `parse```. Quando o atributo é definido como `` `false```, o valor introduzido será passado para o modelo como uma string. O valor padrão do atributo é `` `true```. 
+- Suporte para o atributo `` `parse```. Quando o atributo é definido como ```false```, o valor introduzido será passado para o modelo como uma string. O valor padrão do atributo é ```true```. 
 ```html
 <input type="text" name="field" ng-model="birthDate" ui-date-mask parse="false">
 ```
